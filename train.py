@@ -486,7 +486,7 @@ else:
     max_length=25
     hidden_size = 512
     n_words=8873
-    embedding_input_size=42446
+    embedding_input_size=50927
     encoder1 = EncoderRNN(embedding_input_size, hidden_size).to(device)
     attn_decoder1 = AttnDecoderRNN(hidden_size, n_words, dropout_p=0.1).to(device)
     def eval(jdf,encoder,decoder,i):
